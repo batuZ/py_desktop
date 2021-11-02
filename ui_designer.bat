@@ -1,0 +1,1 @@
+C:\Users\30470\AppData\Roaming\Python\Python37\site-packages\qt5_applications\Qt\bin\designer.exe %1
