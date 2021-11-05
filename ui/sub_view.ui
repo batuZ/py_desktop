@@ -6,35 +6,76 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>372</width>
-    <height>272</height>
+    <width>306</width>
+    <height>78</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>SubForm</string>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>140</y>
-     <width>181</width>
-     <height>51</height>
+     <x>150</x>
+     <y>20</y>
+     <width>121</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>send msg to main</string>
    </property>
   </widget>
-  <action name="action_open_it">
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
    <property name="text">
-    <string>_open_it</string>
+    <string>PushButton</string>
    </property>
-   <property name="toolTip">
-    <string>112233</string>
-   </property>
-  </action>
+  </widget>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Sub_Form</receiver>
+   <slot>pushBtn2_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>68</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Sub_Form</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>323</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushBtn2_clicked()</slot>
+ </slots>
 </ui>

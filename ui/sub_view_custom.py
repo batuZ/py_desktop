@@ -14,3 +14,7 @@ class SubView(QWidget):
     def send_msg_to_parent(self):
         # 判断一下有没有召唤者，避免调用空对象
         self.father.callback('send_msg_to_parent') if self.father else print('send_msg_to_parent')
+
+    def pushBtn2_clicked(self):
+        '''这个信号是在PyDesigner里定义的'''
+        print(123)

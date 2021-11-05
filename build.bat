@@ -1,2 +1,2 @@
 pipenv install
-pyinstaller.exe %1
+pyinstaller.exe main.py
