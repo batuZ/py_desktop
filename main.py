@@ -16,12 +16,16 @@ if __name__ == '__main__':
     with open('./ui/qss.css', 'r', encoding='UTF-8') as f:
         app.setStyleSheet(f.read())
 
+
+
+
+    """
     # 单窗体，多界面切换模式
     # fix = loadUi('ui/Fix-window.ui') # 直接从ui获取对象
     fix = FixWindow()
     fix.show()
 
-    """
+   
     # 继承designer创建的form类，方便在designer中修改，程序中更新
     root_view = Root()
     root_view.show()
@@ -29,10 +33,11 @@ if __name__ == '__main__':
     # 直接加载uiy文件，不转py
     sub_view = SubView()
     sub_view.show()
+    """
 
     # 不用designer，手撸UI
     custom_view = CustomView()
     custom_view.show()
-    """
+
 
     sys.exit(app.exec_())
